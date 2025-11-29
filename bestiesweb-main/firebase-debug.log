@@ -1,0 +1,58 @@
+[debug] [2025-11-14T07:32:02.618Z] ----------------------------------------------------------------------
+[debug] [2025-11-14T07:32:02.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-11-14T07:32:02.621Z] CLI Version:   14.25.0
+[debug] [2025-11-14T07:32:02.621Z] Platform:      win32
+[debug] [2025-11-14T07:32:02.622Z] Node Version:  v24.11.0
+[debug] [2025-11-14T07:32:02.622Z] Time:          Fri Nov 14 2025 17:32:02 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2025-11-14T07:32:02.622Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\bestiesweb-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-14T07:32:09.417Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-14T07:32:09.417Z] > authorizing via signed-in user (cryptoboost4@gmail.com)
+[debug] [2025-11-14T07:32:09.419Z] Checked if tokens are valid: true, expires at: 1763108452520
+[debug] [2025-11-14T07:32:09.419Z] Checked if tokens are valid: true, expires at: 1763108452520
+[debug] [2025-11-14T07:32:09.420Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/besties-web [none]
+[debug] [2025-11-14T07:32:10.168Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/besties-web 200
+[debug] [2025-11-14T07:32:10.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/besties-web {"projectId":"besties-web","projectNumber":"476264991282","displayName":"besties web","name":"projects/besties-web","resources":{"hostingSite":"besties-web"},"state":"ACTIVE","etag":"1_929f3b84-4614-4e8c-b445-8402f8abe4f8"}
+[info] i  Using project besties-web (besties web) . 
+[info] 
+=== Hosting Setup
+[debug] [2025-11-14T07:32:10.224Z] Checked if tokens are valid: true, expires at: 1763108452520
+[debug] [2025-11-14T07:32:10.225Z] Checked if tokens are valid: true, expires at: 1763108452520
+[debug] [2025-11-14T07:32:10.226Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/besties-web [none]
+[debug] [2025-11-14T07:32:10.695Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/besties-web 200
+[debug] [2025-11-14T07:32:10.695Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/besties-web {"projectId":"besties-web","projectNumber":"476264991282","displayName":"besties web","name":"projects/besties-web","resources":{"hostingSite":"besties-web"},"state":"ACTIVE","etag":"1_929f3b84-4614-4e8c-b445-8402f8abe4f8"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-11-14T07:32:21.996Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:508:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1317:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:520:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.

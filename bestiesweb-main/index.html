@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Besties - Your Automatic Safety Net</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#FF89C9",
+                "secondary": "#A09EFF",
+                "accent": "#F9D56B",
+                "background-light": "#fddef4",
+                "surface-light": "#FFFFFF",
+                "text-primary": "#654C75",
+                "text-secondary": "#A996B8",
+              },
+              fontFamily: {
+                "display": ["Fredoka One", "cursive"],
+                "body": ["Quicksand", "sans-serif"]
+              },
+              borderRadius: {
+                "DEFAULT": "1rem",
+                "lg": "1.25rem",
+                "xl": "2rem",
+                "full": "9999px"
+              },
+              boxShadow: {
+                'soft': '0 6px 20px 0 rgba(193, 169, 219, 0.25)',
+                'inner-soft': 'inset 0 2px 8px 0 rgba(193, 169, 219, 0.15)',
+                'glow-pink': '0 0 20px rgba(255, 137, 201, 0.8)',
+              },
+              animation: {
+                'sparkle': 'sparkle 1.5s infinite',
+                'float': 'float 6s ease-in-out infinite',
+              },
+              keyframes: {
+                sparkle: {
+                  '0%, 100%': { transform: 'scale(0.5)', opacity: '0.5' },
+                  '50%': { transform: 'scale(1.2)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0px)' },
+                  '50%': { transform: 'translateY(-20px)' },
+                }
+              }
+            },
+          },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        .sparkle {
+          position: absolute;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6'%3E%3Cpath fill-rule='evenodd' d='M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-7.19c-2.818 0-5.58-1.12-7.562-3.101a.75.75 0 0 1 1.06-1.06c1.536 1.536 3.64 2.411 5.812 2.411v-3.19a6.75 6.75 0 0 1 1.153-3.751Z' clip-rule='evenodd' /%3E%3C/svg%3E");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          animation: sparkle 1.5s infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="font-body bg-background-light text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
